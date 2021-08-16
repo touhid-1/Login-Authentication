@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login authentication</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">HTML HINTS</div>
+        <ul>
+            <li><a href="https://www.htmlhints.com/">Back To Website</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="welcome">Welcome!</div>
+        <div class="card">
+            <div class="first_half">
+                <div class="text">Sign In With</div>
+                <div class="flex">
+                    <i class='bx bxl-facebook-square' ></i>
+                    <button class="login_options">Facebook</button>
+                    <i class='bx bxl-google'></i>
+                    <button class="login_options"> Google</button>
+                </div>
+            </div>
+            <div class="second_half">
+                <div class="text">Or sign in with credentials</div>
+                <div id="error1" class="error1"></div>
+                <div id="error2" class="error2"></div>
+                <form action="" onsubmit="return false;">
+                    <div class="email">
+                        <input type="email" required placeholder="Email" id="email" />
+                    </div>
+                    <div class="password" >
+                        <input type="password" placeholder="Password" id="password"/>
+                    </div>
+                    <button class="login" id="login-btn">Login</button>
+                </form>
+            </div>
+        </div>           
+            <div class="copyright">
+                <p>&copy;2021<span> HTML HINTS</span></p>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

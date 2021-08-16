@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --normal-font-size: 2em;
+    --small-font-size: 1.4em;
+}
+body{
+    height: 100vh;
+    font-family: Calibri, Helvetica, sans-serif;
+    background-image: linear-gradient(to right top, #f08904 , #ee5c28 , #E43946 , #db1e60);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    font-size: var(--normal-font-size);
+    height: 2em;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35em;
+}
+.welcome{
+    margin-top: .805em;
+    font-size: var(--normal-font-size);
+    color: white;
+}
+.card{
+    position: relative;
+    height:100%;
+    width:30%;
+    background-color: whitesmoke;
+    border-radius: .5em;
+
+}
+
+.first_half{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border: solid rgb(235, 230, 230);
+    border-width: 0 0 1px 0;
+}
+.flex{
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+.bxl-facebook-square{
+    position: absolute;
+    left: 9%;
+    top: 55%;
+    color: #2646d3;
+}
+.bxl-google{
+    position: absolute;
+    left: 62%;
+    color: royalblue;
+}
+.login_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 35%;
+    border-radius: .5em;
+    background-color: white;
+    color: #5271ff;
+    box-shadow: 5px 3px 2px rgb(209, 205, 205);
+    font-size: var(--small-font-size);
+    cursor: pointer;
+
+
+}
+
+.second_half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+}
+
+input{
+    width: 24em;
+    height: 0.805em;
+    padding: 10px;
+    border-radius: .5em;
+    border: white;
+    box-shadow: 5px 3px 2px rgb(209, 205, 205);
+    outline: none;
+}
+.text{
+    position: absolute;
+    top: 0;
+    padding-top: 6%;
+    font-size: var(--small-font-size);
+    color: grey;
+    font-size: 1em;
+}
+.email{
+    position: absolute;
+    bottom: 60%;
+}
+.login{
+    border-radius: .2em;
+    padding: 7px;
+    width: 20%;
+    position: absolute;
+    left: 38%;
+    bottom: 15%;
+    font-size:var(--small-font-size);
+    background-color: #5271ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 5px 3px 2px rgb(59, 86, 160); */
+    cursor: pointer;
+    
+}
+.login:hover{
+    padding: 8px;
+}
+.copyright{
+    padding-top:32px;
+    color:black;
+    font-size: var(--small-font-size);
+    font-weight: 700;
+}
+button{
+    border: none;
+}
+span{
+    color:#2646d3 ;
+}
+.error1{
+    position: absolute;
+    top: 14%;
+}
+.error2{
+    position: absolute;
+    top: 20%;
+}
+@media screen and (min-width: 260px){
+    .logo, a{
+        font-size: .750em;
+    }
+    .card{
+        width: 18em;
+    }
+    .login_options{
+        font-size: 1em;
+    }
+    input{
+        width:18em;
+    }
+    .login{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 700px){
+    .card{
+        width:20em;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .bxl-facebook-square{
+        font-size: 14px;
+    }    
+    .bxl-google{
+        font-size: 14px;
+    }
+}
